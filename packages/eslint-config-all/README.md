@@ -4,7 +4,7 @@
 
 - Lint and format code (No Prettier)
 - Designed to work with TypeScript, React
-- Supports lint for json, yaml, markdown files
+- Lint support for json, yaml, markdown files
 
 ## Install
 
