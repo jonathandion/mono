@@ -1,7 +1,7 @@
 {
   "name": "@jdion/eslint-config-ts",
   "version": "0.0.1",
-  "description": "",
+  "description": "ESLint config for TypeScript projects.",
   "author": "Jonathan Dion <jonathandionalary@gmail.com> (https://github.com/jonathandion/)",
   "license": "MIT",
   "homepage": "https://github.com/jonathandion/web-configs",
