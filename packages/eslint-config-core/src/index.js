@@ -15,6 +15,7 @@ module.exports = {
     'plugin:jsonc/recommended-with-jsonc',
     'plugin:yml/standard',
     'plugin:markdown/recommended',
+    'plugin:tailwindcss/recommended',
   ],
   ignorePatterns: [
     '*.min.*',

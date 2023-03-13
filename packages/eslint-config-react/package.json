@@ -1,6 +1,6 @@
 {
   "name": "@jdion/eslint-config-react",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "ESLint config for React projects.",
   "author": "Jonathan Dion <jonathandionalary@gmail.com> (https://github.com/jonathandion/)",
   "license": "MIT",
@@ -13,13 +13,12 @@
   "files": [
     "src/index.js"
   ],
-  "scripts": {
-  },
+  "scripts": {},
   "peerDependencies": {
     "eslint": ">=7.4.0"
   },
   "dependencies": {
-    "@jdion/eslint-config-ts": "workspace:0.0.1",
+    "@jdion/eslint-config-ts": "workspace:0.0.2",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0"
   },

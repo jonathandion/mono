@@ -1,6 +1,6 @@
 {
   "name": "@jdion/eslint-config-core",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "ESLint config for JavaScript, JSON, YAML, and Markdown files.",
   "author": "Jonathan Dion <jonathandionalary@gmail.com> (https://github.com/jonathandion/)",
   "license": "MIT",
@@ -12,8 +12,7 @@
   "files": [
     "src/index.js"
   ],
-  "scripts": {
-  },
+  "scripts": {},
   "peerDependencies": {
     "eslint": ">=7.4.0"
   },
@@ -27,6 +26,7 @@
     "eslint-plugin-n": "^15.6.1",
     "eslint-plugin-no-only-tests": "^3.1.0",
     "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-tailwindcss": "^3.10.1",
     "eslint-plugin-unicorn": "^45.0.2",
     "eslint-plugin-unused-imports": "^2.0.0",
     "eslint-plugin-yml": "^1.5.0",

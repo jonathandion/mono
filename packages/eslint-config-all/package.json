@@ -1,6 +1,6 @@
 {
   "name": "@jdion/eslint-config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "ESLint config for web development.",
   "author": "Jonathan Dion <jonathandionalary@gmail.com> (https://github.com/jonathandion/)",
   "license": "MIT",
@@ -12,15 +12,14 @@
   "files": [
     "src/index.js"
   ],
-  "scripts": {
-  },
+  "scripts": {},
   "peerDependencies": {
     "eslint": ">=7.4.0"
   },
   "dependencies": {
-    "@jdion/eslint-config-core": "workspace:0.0.1",
-    "@jdion/eslint-config-react": "workspace:0.0.1",
-    "@jdion/eslint-config-ts": "workspace:0.0.1",
+    "@jdion/eslint-config-core": "workspace:0.1.0",
+    "@jdion/eslint-config-react": "workspace:0.0.2",
+    "@jdion/eslint-config-ts": "workspace:0.0.2",
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-html": "^7.1.0",
     "eslint-plugin-import": "^2.27.5",
