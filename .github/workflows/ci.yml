@@ -1,7 +1,8 @@
 name: CI
 on:
   pull_request:
-    types: [opened, reopened]
+    branches:
+      - main
 env:
   CI: true
   PNPM_CACHE_FOLDER: .pnpm-store
