@@ -8,10 +8,11 @@
   "scripts": {
     "audit": "pnpm audit",
     "build": "pnpm -r run build",
+    "ci": "pnpm build && pnpm lint && pnpm audit",
     "ci:publish": "pnpm publish -r",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
     "lint:debug": "eslint . --debug",
+    "lint:fix": "eslint . --fix",
     "lint:projects": "pnpm --filter=*-project run lint"
   },
   "devDependencies": {
