@@ -1,5 +1,5 @@
-# nix
-.direnv
+# build output
+dist
 
 ### Node template
 # Logs
@@ -20,18 +20,6 @@ lib-cov
 
 # Coverage directory used by tools like istanbul
 coverage
-
-# nyc test coverage
-.nyc_output
-
-# Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
-.grunt
-
-# Bower dependency directory (https://bower.io/)
-bower_components
-
-# node-waf configuration
-.lock-wscript
 
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
@@ -70,9 +58,6 @@ typings/
 # nuxt.js build output
 .nuxt
 
-# Nuxt generate
-dist
-
 # Serverless directories
 .serverless
 
@@ -80,3 +65,21 @@ dist
 .idea
 
 *.lerna_backup
+
+# nix
+.direnv
+
+# pnpm
+.pnpm-store
+
+*.tsbuildinfo
+
+# swc
+.swc/
+
+# turbo repo
+.turbo
+
+# Vercel
+.vercel
+.now
