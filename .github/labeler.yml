@@ -1,0 +1,8 @@
+eslint-config:
+  - packages/eslint-config-*
+
+typescript:
+  - packages/*typescript*
+
+react:
+  - packages/*react*
