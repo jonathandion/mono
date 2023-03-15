@@ -9,6 +9,7 @@
     "audit": "pnpm audit",
     "build": "pnpm -r run build",
     "ci": "pnpm build && pnpm lint && pnpm audit",
+    "ci:version": "changeset version",
     "ci:publish": "pnpm publish -r --no-git-checks",
     "lint": "eslint .",
     "lint:debug": "eslint . --debug",
