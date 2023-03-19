@@ -1,4 +1,4 @@
-name: Changesets
+name: Release
 on:
   push:
     branches:
@@ -7,7 +7,7 @@ env:
   CI: true
   PNPM_CACHE_FOLDER: .pnpm-store
 jobs:
-  version:
+  release:
     timeout-minutes: 15
     runs-on: ubuntu-latest
     steps:
