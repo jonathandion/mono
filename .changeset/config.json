@@ -4,15 +4,14 @@
   "commit": false,
   "fixed": [
     [
-      "eslint-config",
-      "eslint-config-core",
-      "eslint-config-react",
-      "eslint-config-typescript"
+      "@jdion/*"
     ]
   ],
   "linked": [],
   "access": "restricted",
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
-  "ignore": []
+  "ignore": [
+    "@test/*"
+  ]
 }
