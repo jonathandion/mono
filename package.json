@@ -10,7 +10,7 @@
     "build": "pnpm -r run build",
     "ci": "pnpm build && pnpm lint && pnpm audit",
     "ci:version": "changeset version",
-    "ci:publish": "pnpm publish -r --no-git-checks",
+    "ci:publish": "pnpm publish -r",
     "lint": "eslint .",
     "lint:debug": "eslint . --debug",
     "lint:fix": "eslint . --fix",
