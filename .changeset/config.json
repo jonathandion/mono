@@ -2,7 +2,14 @@
   "$schema": "https://unpkg.com/@changesets/config@2.3.0/schema.json",
   "changelog": "@changesets/cli/changelog",
   "commit": false,
-  "fixed": [],
+  "fixed": [
+    [
+      "eslint-config",
+      "eslint-config-core",
+      "eslint-config-react",
+      "eslint-config-typescript"
+    ]
+  ],
   "linked": [],
   "access": "restricted",
   "baseBranch": "main",

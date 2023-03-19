@@ -8,25 +8,34 @@ env:
   CI: true
   PNPM_CACHE_FOLDER: .pnpm-store
 jobs:
-  ci:
+  test:
     timeout-minutes: 15
     runs-on: ubuntu-latest
     steps:
-      - name: checkout code repository
+      - name: Checkout code repository
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - name: setup node.js
+
+      - name: Setup node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 14
-      - name: install pnpm
+          node-version: 18
+
+      - name: Install pnpm
         run: npm i pnpm@latest -g
+
       - name: Setup npmrc
         run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
-      - name: setup pnpm config
+
+      - name: Setup pnpm config
         run: pnpm config set store-dir $PNPM_CACHE_FOLDER
-      - name: install dependencies
+
+      - name: Install dependencies
         run: pnpm install
-      - name: valide changes
-        run: pnpm ci
+
+      - name: Lint
+        run: pnpm lint
+
+      - name: Audit
+        run: pnpm audit
