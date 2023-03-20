@@ -28,7 +28,7 @@
     "eslint-plugin-unicorn": "^46.0.0",
     "eslint-plugin-yml": "^1.5.0",
     "jsonc-eslint-parser": "^2.1.0",
-    "typescript": "^4.9.5",
+    "typescript": "^5.0.0",
     "yaml-eslint-parser": "^1.1.0"
   },
   "devDependencies": {
