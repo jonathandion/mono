@@ -1,5 +1,18 @@
 # @jdion/eslint-config
 
+## 0.3.0
+
+### Minor Changes
+
+- 9a5a5ce: Bump eslint dependencies
+
+### Patch Changes
+
+- Updated dependencies [9a5a5ce]
+  - @jdion/eslint-config-core@0.3.0
+  - @jdion/eslint-config-ts@0.3.0
+  - @jdion/eslint-config-react@0.3.0
+
 ## 0.1.0
 
 ### Minor Changes
