@@ -9,7 +9,7 @@
     "audit": "pnpm audit",
     "build": "pnpm -r run build",
     "ci": "pnpm build && pnpm lint && pnpm audit",
-    "ci:version": "changeset version",
+    "ci:version": "pnpm install --lockfile-only && changeset version",
     "ci:publish": "pnpm publish -r",
     "lint": "eslint .",
     "lint:debug": "eslint . --debug",
