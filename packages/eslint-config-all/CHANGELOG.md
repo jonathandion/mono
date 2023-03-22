@@ -1,5 +1,19 @@
 # @jdion/eslint-config
 
+## 0.4.0
+
+### Minor Changes
+
+- 110a218: - Added Tailwind CSS ESlint rules from [eslint-plugin-tailwindcss](https://www.npmjs.com/package/eslint-plugin-tailwindcss)
+
+### Patch Changes
+
+- Updated dependencies [110a218]
+  - @jdion/eslint-config-tailwind@0.4.0
+  - @jdion/eslint-config-core@0.4.0
+  - @jdion/eslint-config-react@0.4.0
+  - @jdion/eslint-config-ts@0.4.0
+
 ## 0.3.0
 
 ### Minor Changes
