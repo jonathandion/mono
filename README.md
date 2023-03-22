@@ -1,5 +1,7 @@
 # Web Configs
 
+![build status](https://img.shields.io/github/actions/workflow/status/jonathandion/web-configs/release.yml)
+
 This repository contains common configurations for building web apps.
 
 ## Configs
