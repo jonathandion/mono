@@ -12,7 +12,7 @@
     "ci": "pnpm build && pnpm lint && pnpm audit",
     "ci:debug": "act --secret-file my.secrets",
     "ci:publish": "pnpm publish -r",
--   "ci:version": "pnpm install --lockfile-only && changeset version",
+    "ci:version": "changeset version && pnpm install --lockfile-only",
     "lint": "eslint .",
     "lint:debug": "eslint . --debug",
     "lint:fix": "eslint . --fix",
