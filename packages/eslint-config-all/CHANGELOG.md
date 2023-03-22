@@ -1,5 +1,15 @@
 # @jdion/eslint-config
 
+## 0.5.0
+
+### Patch Changes
+
+- Updated dependencies [e466ac1]
+  - @jdion/eslint-config-tailwind@0.5.0
+  - @jdion/eslint-config-core@0.5.0
+  - @jdion/eslint-config-react@0.5.0
+  - @jdion/eslint-config-ts@0.5.0
+
 ## 0.4.0
 
 ### Minor Changes
