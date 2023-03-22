@@ -1,6 +1,6 @@
 {
   "name": "@jdion/eslint-config-tailwind",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "ESLint config for Tailwind CSS.",
   "author": "Jonathan Dion <jonathandionalary@gmail.com> (https://github.com/jonathandion/)",
   "license": "MIT",

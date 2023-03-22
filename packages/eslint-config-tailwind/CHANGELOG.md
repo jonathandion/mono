@@ -1,5 +1,11 @@
 # @jdion/eslint-config-tailwind
 
+## 0.5.0
+
+### Minor Changes
+
+- e466ac1: Now using all ESLint Tailwind CSS recommend rules
+
 ## 0.4.0
 
 ### Minor Changes

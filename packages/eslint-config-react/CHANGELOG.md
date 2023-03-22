@@ -1,5 +1,11 @@
 # @jdion/eslint-config-react
 
+## 0.5.0
+
+### Patch Changes
+
+- @jdion/eslint-config-ts@0.5.0
+
 ## 0.4.0
 
 ### Patch Changes
