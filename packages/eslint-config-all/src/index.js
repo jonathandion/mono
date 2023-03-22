@@ -3,5 +3,6 @@ module.exports = {
     '@jdion/eslint-config-core',
     '@jdion/eslint-config-ts',
     '@jdion/eslint-config-react',
+    '@jdion/eslint-config-tailwind',
   ],
 };

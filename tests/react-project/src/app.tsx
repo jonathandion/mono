@@ -3,14 +3,14 @@ import { useState } from 'react';
 import './app.css';
 
 interface AppProps {
-  name : string;
+  name: string;
 }
 
 export const App: FC<AppProps> = () => {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="App" data-testid="app">
+    <div data-testid="app">
       <div>
         <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
           <img src="/vite.svg" className="logo" alt="Vite logo" />
@@ -18,7 +18,9 @@ export const App: FC<AppProps> = () => {
         <a href="https://reactjs.org" target="_blank" rel="noreferrer">
         </a>
       </div>
-      <h1>Vite + React</h1>
+      <h1 className="text-6xl font-bold">
+        Vite + React
+      </h1>
       <div className="card">
         <button type="button" onClick={() => setCount(count => count + 1)}>
           count is {count}

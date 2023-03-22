@@ -8,6 +8,7 @@
   "scripts": {
     "audit": "pnpm audit",
     "build": "pnpm -r run build",
+    "change": "changeset",
     "ci": "pnpm build && pnpm lint && pnpm audit",
     "ci:debug": "act --secret-file my.secrets",
     "ci:publish": "pnpm publish -r",
