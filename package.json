@@ -8,11 +8,11 @@
   "scripts": {
     "audit": "pnpm audit",
     "build": "pnpm -r run build",
-    "change": "changeset",
+    "change": "pnpm install && changeset",
     "ci": "pnpm build && pnpm lint && pnpm audit",
     "ci:debug": "act --secret-file my.secrets",
     "ci:publish": "pnpm publish -r",
-    "ci:version": "pnpm install --lockfile-only && changeset version",
+    "ci:version": "changeset version",
     "lint": "eslint .",
     "lint:debug": "eslint . --debug",
     "lint:fix": "eslint . --fix",
