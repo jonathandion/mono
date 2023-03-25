@@ -221,7 +221,7 @@ module.exports = {
     'import/no-default-export': 2,
 
     // Common
-    'semi': ['error', 'always'],
+    'semi': ['error', 'never'],
     'curly': ['error', 'multi-line'],
     'quotes': ['error', 'single'],
     'quote-props': ['error', 'consistent-as-needed'],
@@ -378,4 +378,4 @@ module.exports = {
     'yml/quotes': ['error', { prefer: 'single', avoidEscape: false }],
     'yml/no-empty-document': 'off',
   },
-};
+}
