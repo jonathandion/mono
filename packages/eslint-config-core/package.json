@@ -1,6 +1,6 @@
 {
   "name": "@jdion/eslint-config-core",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "ESLint config for JavaScript, JSON, YAML, and Markdown files.",
   "author": "Jonathan Dion <jonathandionalary@gmail.com> (https://github.com/jonathandion/)",
   "license": "MIT",

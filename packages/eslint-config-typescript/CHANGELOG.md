@@ -1,5 +1,16 @@
 # @jdion/eslint-config-ts
 
+## 0.6.0
+
+### Minor Changes
+
+- e91ecfd: Now using no semi rule
+
+### Patch Changes
+
+- Updated dependencies [e91ecfd]
+  - @jdion/eslint-config-core@0.6.0
+
 ## 0.5.0
 
 ### Patch Changes
