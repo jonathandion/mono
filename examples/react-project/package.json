@@ -1,5 +1,5 @@
 {
-  "name": "@test/project-react",
+  "name": "@example/project-react",
   "private": true,
   "version": "0.0.0",
   "scripts": {
