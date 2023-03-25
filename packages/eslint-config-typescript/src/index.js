@@ -1,9 +1,9 @@
-const basic = require('@jdion/eslint-config-core');
+const basic = require('@jdion/eslint-config-core')
 
-const fs = require('fs');
-const { join } = require('node:path');
+const fs = require('fs')
+const { join } = require('node:path')
 
-const tsconfig = process.env.ESLINT_TSCONFIG || 'tsconfig.eslint.json';
+const tsconfig = process.env.ESLINT_TSCONFIG || 'tsconfig.eslint.json'
 
 module.exports = {
   extends: [
@@ -123,7 +123,7 @@ module.exports = {
 
     // Formatting
     'semi': 'off',
-    '@typescript-eslint/semi': ['error', 'always'],
+    '@typescript-eslint/semi': ['error', 'never'],
     'quotes': 'off',
     '@typescript-eslint/quotes': ['error', 'single'],
     'space-infix-ops': 'off',
@@ -166,4 +166,4 @@ module.exports = {
       },
     }],
   },
-};
+}

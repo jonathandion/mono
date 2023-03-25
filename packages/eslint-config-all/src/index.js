@@ -5,4 +5,4 @@ module.exports = {
     '@jdion/eslint-config-react',
     '@jdion/eslint-config-tailwind',
   ],
-};
+}
