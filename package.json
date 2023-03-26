@@ -16,7 +16,7 @@
     "lint": "eslint .",
     "lint:debug": "eslint . --debug",
     "lint:fix": "eslint . --fix",
-    "lint:projects": "pnpm --filter=*-project run lint"
+    "lint:examples": "pnpm --filter=@example/* run lint"
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.0",

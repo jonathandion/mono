@@ -1,13 +1,13 @@
-import type { FC } from 'react';
-import { useState } from 'react';
-import './app.css';
+import type { FC } from 'react'
+import { useState } from 'react'
+import './app.css'
 
 interface AppProps {
   name: string;
 }
 
 export const App: FC<AppProps> = () => {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0)
 
   return (
     <div data-testid="app">
@@ -33,6 +33,6 @@ export const App: FC<AppProps> = () => {
         Click on the Vite and React logos to learn more
       </p>
     </div>
-  );
-};
+  )
+}
 
