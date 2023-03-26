@@ -1,5 +1,11 @@
 # @jdion/eslint-config-tailwind
 
+## 0.7.0
+
+### Minor Changes
+
+- 3f330fe: Now using no semi rule
+
 ## 0.6.0
 
 ### Minor Changes
