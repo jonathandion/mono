@@ -37,5 +37,8 @@ jobs:
       - name: Lint
         run: pnpm lint
 
+      - name: Lint examples
+        run: pnpm lint:examples
+
       - name: Audit
         run: pnpm audit
