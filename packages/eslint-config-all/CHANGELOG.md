@@ -1,5 +1,19 @@
 # @jdion/eslint-config
 
+## 0.7.0
+
+### Minor Changes
+
+- 3f330fe: Now using no semi rule
+
+### Patch Changes
+
+- Updated dependencies [3f330fe]
+  - @jdion/eslint-config-ts@0.7.0
+  - @jdion/eslint-config-tailwind@0.7.0
+  - @jdion/eslint-config-react@0.7.0
+  - @jdion/eslint-config-core@0.7.0
+
 ## 0.6.0
 
 ### Minor Changes
