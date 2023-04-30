@@ -19,7 +19,6 @@
   "dependencies": {
     "@jdion/eslint-config-core": "workspace:0.7.0",
     "@jdion/eslint-config-react": "workspace:0.7.0",
-    "@jdion/eslint-config-tailwind": "workspace:0.7.0",
     "@jdion/eslint-config-ts": "workspace:0.7.0",
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-html": "^7.1.0",
@@ -30,7 +29,7 @@
     "eslint-plugin-yml": "^1.5.0",
     "jsonc-eslint-parser": "^2.1.0",
     "typescript": "^4.9.5",
-    "yaml-eslint-parser": "^1.1.0"
+    "yaml-eslint-parser": "^1.2.0"
   },
   "devDependencies": {
     "eslint": "^8.35.0"
