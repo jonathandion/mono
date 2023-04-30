@@ -10,7 +10,7 @@ This repo is managed as a monorepo that is composed of many npm packages, where 
 
 | Config | Version | Description
 |-|-|-|
-| [eslint-config-all](/packages/eslint-config-all/README.md) | [![npm](https://img.shields.io/npm/v/@jdion/eslint-config?color=238636&label=)](https://npmjs.com/package/@jdion/eslint-config) | Lint config for TypeScript, React, Tailwind CSS projects
+| [eslint-config-all](/packages/eslint-config-all/README.md) | [![npm](https://img.shields.io/npm/v/@jdion/eslint-config?color=238636&label=)](https://npmjs.com/package/@jdion/eslint-config) | Lint config for TypeScript, React projects
 
 ## FAQ
 

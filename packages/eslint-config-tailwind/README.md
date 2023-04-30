@@ -1,1 +1,0 @@
-# @jdion/eslint-config-tailwind
