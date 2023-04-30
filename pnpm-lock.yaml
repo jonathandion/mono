@@ -93,8 +93,8 @@ importers:
         specifier: ^4.9.5
         version: 4.9.5
       yaml-eslint-parser:
-        specifier: ^1.1.0
-        version: 1.1.0
+        specifier: ^1.2.0
+        version: 1.2.0
     devDependencies:
       eslint:
         specifier: ^8.35.0
@@ -1941,7 +1941,7 @@ packages:
       eslint: 8.35.0
       lodash: 4.17.21
       natural-compare: 1.4.0
-      yaml-eslint-parser: 1.1.0
+      yaml-eslint-parser: 1.2.0
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -3895,6 +3895,15 @@ packages:
 
   /yaml-eslint-parser@1.1.0:
     resolution: {integrity: sha512-b464Q1fYiX1oYx2kE8k4mEp6S9Prk+tfDsY/IPxQ0FCjEuj3AKko5Skf3/yQJeYTTDyjDE+aWIJemnv29HvEWQ==}
+    engines: {node: ^14.17.0 || >=16.0.0}
+    dependencies:
+      eslint-visitor-keys: 3.3.0
+      lodash: 4.17.21
+      yaml: 2.2.1
+    dev: false
+
+  /yaml-eslint-parser@1.2.0:
+    resolution: {integrity: sha512-OmuvQd5lyIJWfFALc39K5fGqp0aWNc+EtyhVgcQIPZaUKMnTb7An3RMp+QJizJ/x0F4kpgTNe6BL/ctdvoIwIg==}
     engines: {node: ^14.17.0 || >=16.0.0}
     dependencies:
       eslint-visitor-keys: 3.3.0

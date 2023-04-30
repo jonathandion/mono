@@ -6,7 +6,7 @@
   "author": "Jonathan Dion <jonathandionalary@gmail.com> (https://github.com/jonathandion/)",
   "license": "MIT",
   "scripts": {
-    "audit": "pnpm audit",
+    "audit": "pnpm audit --audit-level high",
     "build": "pnpm -r run build",
     "change": "changeset",
     "ci": "pnpm build && pnpm lint && pnpm audit",
