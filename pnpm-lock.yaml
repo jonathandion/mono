@@ -27,7 +27,7 @@ importers:
         version: 18.2.0(react@18.2.0)
     devDependencies:
       '@jdion/eslint-config':
-        specifier: workspace:^0.7.0
+        specifier: workspace:^0.7.1
         version: link:../../packages/eslint-config-all
       '@types/react':
         specifier: ^18.0.28
@@ -57,13 +57,13 @@ importers:
   packages/eslint-config-all:
     dependencies:
       '@jdion/eslint-config-core':
-        specifier: workspace:0.7.0
+        specifier: workspace:0.7.1
         version: link:../eslint-config-core
       '@jdion/eslint-config-react':
-        specifier: workspace:0.7.0
+        specifier: workspace:0.7.1
         version: link:../eslint-config-react
       '@jdion/eslint-config-ts':
-        specifier: workspace:0.7.0
+        specifier: workspace:0.7.1
         version: link:../eslint-config-typescript
       eslint-plugin-eslint-comments:
         specifier: ^3.2.0
@@ -149,7 +149,7 @@ importers:
   packages/eslint-config-react:
     dependencies:
       '@jdion/eslint-config-ts':
-        specifier: workspace:0.7.0
+        specifier: workspace:0.7.1
         version: link:../eslint-config-typescript
       eslint-plugin-react:
         specifier: ^7.32.2
@@ -168,7 +168,7 @@ importers:
   packages/eslint-config-typescript:
     dependencies:
       '@jdion/eslint-config-core':
-        specifier: workspace:0.7.0
+        specifier: workspace:0.7.1
         version: link:../eslint-config-core
       '@typescript-eslint/eslint-plugin':
         specifier: ^5.54.0
