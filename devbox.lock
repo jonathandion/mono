@@ -1,6 +1,18 @@
 {
   "lockfile_version": "1",
   "packages": {
+    "act@latest": {
+      "last_modified": "2023-08-30T00:25:28Z",
+      "resolved": "github:NixOS/nixpkgs/a63a64b593dcf2fe05f7c5d666eb395950f36bc9#act",
+      "source": "devbox-search",
+      "version": "0.2.49"
+    },
+    "docker@latest": {
+      "last_modified": "2023-08-30T00:25:28Z",
+      "resolved": "github:NixOS/nixpkgs/a63a64b593dcf2fe05f7c5d666eb395950f36bc9#docker",
+      "source": "devbox-search",
+      "version": "20.10.25"
+    },
     "nodePackages_latest.pnpm@8.6.11": {
       "last_modified": "2023-08-10T23:14:40Z",
       "resolved": "github:NixOS/nixpkgs/cf73a86c35a84de0e2f3ba494327cf6fb51c0dfd#nodePackages_latest.pnpm",

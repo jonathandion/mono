@@ -17,6 +17,10 @@
       "dependsOn": ["^build"],
       "outputs": []
     },
+    "cleanup": {
+      "dependsOn": [],
+      "outputs": []
+    },
     "types:emit": {
       "dependsOn": [],
       "outputs": []

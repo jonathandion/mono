@@ -10,8 +10,9 @@
     "build": "turbo run build --color",
     "dev": "turbo run dev --color",
     "change": "changeset",
+    "cleanup": "turbo cleanup",
     "ci": "turbo run build types:check lint audit --color",
-    "ci:debug": "act --secret-file my.secrets",
+    "ci:debug": "act pull_request --secret-file my.secrets -s GITHUB_TOKEN=\"$(gh auth token)\" --container-architecture linux/amd64",
     "ci:publish": "pnpm publish -r",
     "ci:version": "changeset version && pnpm install --lockfile-only",
     "lint": "eslint ./ --ext js,jsx,ts,tsx,json,mdx,md --max-warnings=0",
@@ -20,9 +21,12 @@
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.2",
-    "@jdion/eslint-config": "workspace:0.7.1",
+    "@jdion/eslint-config": "workspace:*",
+    "@swc/cli": "^0.1.62",
+    "@swc/core": "^1.3.81",
     "concurrently": "^8.2.1",
     "eslint": "^8.48.0",
+    "turbo": "^1.10.13",
     "typescript": "^5.2.2"
   }
 }
