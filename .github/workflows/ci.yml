@@ -36,4 +36,4 @@ jobs:
         run: pnpm install
 
       - name: CI tasks
-        run: pnpm run build types:check lint audit
+        run: pnpm run ci
