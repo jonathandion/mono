@@ -1,6 +1,7 @@
 import type { FC } from 'react'
 import { useState } from 'react'
 import './app.css'
+import { cn } from '@jdion/tailwindcss-utils'
 
 interface AppProps {
   name: string;
@@ -18,7 +19,9 @@ export const App: FC<AppProps> = () => {
         <a href="https://reactjs.org" target="_blank" rel="noreferrer">
         </a>
       </div>
-      <h1 className="text-6xl font-bold">
+      <h1 className={cn('text-6xl font-bold', {
+        'text-slate-500': true,
+      })}>
         Vite + React
       </h1>
       <div className="card">

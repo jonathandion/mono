@@ -36,6 +36,9 @@ importers:
       '@jdion/eslint-config':
         specifier: workspace:^0.7.1
         version: link:../../packages/eslint-config-all
+      '@jdion/tailwindcss-utils':
+        specifier: workspace:^1.0.0
+        version: link:../../packages/tailwindcss-utils
       '@types/react':
         specifier: ^18.2.21
         version: 18.2.21
