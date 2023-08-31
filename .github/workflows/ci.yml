@@ -22,9 +22,8 @@ jobs:
         with:
           node-version: 18.17.1
 
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 8.6.11
+      - name: Install pnpm
+        run: npm i pnpm@8.6.11
 
       - name: Setup npmrc
         run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
