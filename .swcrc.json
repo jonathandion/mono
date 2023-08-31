@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json.schemastore.org/swcrc",
+  "exclude": [".test.ts$", ".test.tsx$"],
+  "jsc": {
+    "parser": {
+      "syntax": "typescript",
+      "tsx": true
+    },
+    "transform": {
+      "react": {
+        "runtime": "automatic"
+      }
+    }
+  },
+  "module": {
+    "type": "es6"
+  },
+  "minify": true,
+  "env": {
+    "targets": {
+      "browsers": [">0.5% in CA, not ie 11, not op_mini all"]
+    }
+  }
+}

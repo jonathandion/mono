@@ -22,7 +22,10 @@ module.exports = {
       : [{
         parserOptions: {
           tsconfigRootDir: process.cwd(),
-          project: [tsconfig],
+          project: [
+            tsconfig,
+            './**/*/tsconfig.*',
+          ],
         },
         parser: '@typescript-eslint/parser',
         excludedFiles: ['**/*.md/*.*'],

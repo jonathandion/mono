@@ -7,21 +7,22 @@
   "license": "MIT",
   "scripts": {
     "audit": "pnpm audit --audit-level high",
-    "build": "pnpm -r run build",
+    "build": "turbo run build --color",
+    "dev": "turbo run dev --color",
     "change": "changeset",
-    "ci": "pnpm build && pnpm lint && pnpm audit",
+    "ci": "turbo run build types:check lint audit --color",
     "ci:debug": "act --secret-file my.secrets",
     "ci:publish": "pnpm publish -r",
     "ci:version": "changeset version && pnpm install --lockfile-only",
-    "lint": "eslint .",
+    "lint": "eslint ./ --ext js,jsx,ts,tsx,json,mdx,md --max-warnings=0",
     "lint:debug": "eslint . --debug",
-    "lint:fix": "eslint . --fix",
-    "lint:examples": "pnpm --filter=@example/* run lint"
+    "lint:fix": "eslint ./ --ext js,jsx,ts,tsx,json,mdx,md --max-warnings=0 --fix"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.26.0",
-    "@jdion/eslint-config": "workspace:*",
-    "eslint": "^8.35.0",
-    "typescript": "^4.9.5"
+    "@changesets/cli": "^2.26.2",
+    "@jdion/eslint-config": "workspace:0.7.1",
+    "concurrently": "^8.2.1",
+    "eslint": "^8.48.0",
+    "typescript": "^5.2.2"
   }
 }
