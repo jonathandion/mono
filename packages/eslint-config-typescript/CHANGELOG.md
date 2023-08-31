@@ -1,5 +1,11 @@
 # @jdion/eslint-config-ts
 
+## 1.0.3
+
+### Patch Changes
+
+- @jdion/eslint-config-core@1.0.3
+
 ## 1.0.2
 
 ### Patch Changes
