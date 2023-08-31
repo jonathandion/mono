@@ -8,7 +8,7 @@ env:
   PNPM_CACHE_FOLDER: .pnpm-store
 jobs:
   release:
-    if: github.repository == 'jonathandion/web-configs'
+    if: github.repository == 'jonathandion/mono'
     timeout-minutes: 10
     runs-on: ubuntu-latest
     steps:
@@ -20,10 +20,11 @@ jobs:
       - name: Setup node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 18.17.1
 
-      - name: Install pnpm
-        run: npm i pnpm@latest -g
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8.6.11
 
       - name: Setup pnpm config
         run: pnpm config set store-dir $PNPM_CACHE_FOLDER
