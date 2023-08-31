@@ -19,12 +19,12 @@
   },
   "dependencies": {
     "@jdion/eslint-config-core": "workspace:0.7.1",
-    "@typescript-eslint/eslint-plugin": "^5.54.0",
-    "@typescript-eslint/parser": "^5.54.0",
-    "eslint-plugin-jest": "^27.2.1",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "eslint-plugin-jest": "^27.2.3",
     "eslint-plugin-jest-dom": "^4.0.3"
   },
   "devDependencies": {
-    "eslint": "^8.35.0"
+    "eslint": "^8.48.0"
   }
 }
