@@ -14,8 +14,8 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@jdion/eslint-config": "workspace:^0.7.1",
-    "@jdion/tailwindcss-utils": "workspace:^1.0.0",
+    "@jdion/eslint-config": "workspace:^1.0.2",
+    "@jdion/tailwindcss-utils": "workspace:^1.0.2",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react-swc": "^3.3.2",

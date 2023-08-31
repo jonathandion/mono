@@ -1,5 +1,7 @@
 # @jdion/eslint-config-core
 
+## 1.0.2
+
 ## 0.7.1
 
 ## 0.7.0
