@@ -1,7 +1,9 @@
 {
   "packages": [
     "nodejs@18.17.1",
-    "nodePackages_latest.pnpm@8.6.11"
+    "nodePackages_latest.pnpm@8.6.11",
+    "act@latest",
+    "docker@latest"
   ],
   "shell": {
     "init_hook": [

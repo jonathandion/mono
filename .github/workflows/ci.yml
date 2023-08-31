@@ -35,8 +35,5 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Lint
-        run: pnpm lint
-
-      - name: Audit
-        run: pnpm audit --audit-level high
+      - name: CI tasks
+        run: pnpm run ci

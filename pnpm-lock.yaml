@@ -12,7 +12,7 @@ importers:
         specifier: ^2.26.2
         version: 2.26.2
       '@jdion/eslint-config':
-        specifier: workspace:0.7.1
+        specifier: workspace:*
         version: link:packages/eslint-config-all
       concurrently:
         specifier: ^8.2.1
