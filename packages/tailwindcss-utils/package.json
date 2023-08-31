@@ -1,6 +1,6 @@
 {
   "name": "@jdion/tailwindcss-utils",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Collection of common Tailwind CSS utils",
   "author": "Jonathan Dion <jonathandionalary@gmail.com> (https://github.com/jonathandion/)",
   "license": "MIT",
