@@ -26,7 +26,15 @@
     "@swc/core": "^1.3.81",
     "concurrently": "^8.2.1",
     "eslint": "^8.48.0",
+<<<<<<< HEAD
     "turbo": "^1.10.13",
+=======
+<<<<<<< Updated upstream
+=======
+    "eslint-import-resolver-typescript": "^3.6.0",
+    "turbo": "^1.10.13",
+>>>>>>> Stashed changes
+>>>>>>> 8442726 (feature/dom-package - added dom package and more)
     "typescript": "^5.2.2"
   }
 }
