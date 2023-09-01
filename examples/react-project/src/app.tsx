@@ -1,7 +1,8 @@
 import type { FC } from 'react'
 import { useState } from 'react'
 import './app.css'
-import { cn } from '@jdion/tailwindcss-utils'
+import { cn } from '@jdion/tailwindcss/classnames'
+import { isDom } from '@jdion/dom/types'
 
 interface AppProps {
   name: string;
@@ -20,7 +21,7 @@ export const App: FC<AppProps> = () => {
         </a>
       </div>
       <h1 className={cn('text-6xl font-bold', {
-        'text-slate-500': true,
+        'text-slate-500': isDom,
       })}>
         Vite + React
       </h1>

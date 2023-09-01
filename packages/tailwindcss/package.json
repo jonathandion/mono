@@ -1,0 +1,44 @@
+{
+  "name": "@jdion/tailwindcss",
+  "version": "1.0.0",
+  "description": "Collection of common Tailwind CSS utils",
+  "author": "Jonathan Dion <jonathandionalary@gmail.com> (https://github.com/jonathandion/)",
+  "license": "MIT",
+  "homepage": "https://github.com/jonathandion/mono",
+  "keywords": [
+    "utils",
+    "utilities",
+    "tailwindcss"
+  ],
+  "exports": {
+    "./*": "./dist/*/index.js"
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/index.d.ts",
+        "./dist/*/index.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "concurrently 'pnpm run build:commonjs --watch' 'pnpm run types:emit --watch'",
+    "build": "concurrently 'pnpm build:commonjs' 'pnpm types:emit'",
+    "build:commonjs": "swc src --out-dir dist --config-file=../../.swcrc.json",
+    "types:emit": "tsc --project tsconfig.lib.json",
+    "types:check": "tsc --noEmit",
+    "test": "jest src",
+    "cleanup": "rm -rf ./dist",
+    "prebuild": "pnpm cleanup"
+  },
+  "peerDependencies": {
+    "clsx": ">=2.0.0",
+    "tailwind-merge": ">=1.0.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}

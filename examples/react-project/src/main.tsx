@@ -1,11 +1,11 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import { createRoot } from 'react-dom/client'
+import { StrictMode } from 'react'
 import { App } from './app'
 import './index.css'
 
 // eslint-disable-next-line @typescript-eslint/consistent-type-assertions
-ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-  <React.StrictMode>
+createRoot(document.getElementById('root') as HTMLElement).render(
+  <StrictMode>
     <App name="app-test"/>
-  </React.StrictMode>,
+  </StrictMode>,
 )
