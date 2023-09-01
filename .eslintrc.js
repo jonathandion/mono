@@ -2,6 +2,9 @@ module.exports = {
   extends: [
     '@jdion',
   ],
+  rules: {
+    'react/prop-types': 'off',
+  },
   settings: {
     'import/resolver': {
       typescript: {

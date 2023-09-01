@@ -18,11 +18,11 @@
     "eslint": ">=7.4.0"
   },
   "dependencies": {
-    "@jdion/eslint-config-core": "workspace:1.0.3",
+    "@jdion/eslint-config-core": "workspace:*",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
     "@typescript-eslint/parser": "^5.62.0",
     "eslint-plugin-jest": "^27.2.3",
-    "eslint-plugin-jest-dom": "^5.0.0"
+    "eslint-plugin-jest-dom": "^5.1.0"
   },
   "devDependencies": {
     "eslint": "^8.48.0"

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cast Vanilla Demo</title>
+</head>
+
+<body>
+  <fieldset>
+    <button id="start-cast-button">Start Cast</button>
+    <button id="end-cast-button">End Cast</button>
+    <br />
+    <br />
+    <div>
+      <button id="play-stop-button">Play/Stop</button>
+      <button id="mute-unmute-button">Mute/Unmute</button>
+      <button id="backward-button">Backward</button>
+      <button id="forward-button">Forward</button>
+    </div>
+    <br />
+    <label for="volume">Volume</label>
+    <br />
+    <input id="volume" type="range" min="0" max="100" step="1" />
+    <br />
+    <label>Progress</label>
+    <br />
+    <progress id="progress-bar" value="0" max="100"></progress>
+    <br />
+    <br />
+    <label>Time <span id="time"></span></label>
+    <br />
+  </fieldset>
+  <h2>Cast State</h2>
+  <pre id="cast-state"></pre>
+  <h2>Player State</h2>
+  <pre id="player-state"></pre>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
