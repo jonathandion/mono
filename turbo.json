@@ -6,22 +6,28 @@
       "cache": false
     },
     "build": {
-      "dependsOn": ["^build"],
-      "outputs": ["dist/**/*"]
+      "dependsOn": [
+        "^build"
+      ],
+      "outputs": [
+        "dist/**/*"
+      ]
     },
     "test": {
-      "dependsOn": ["^build"],
-      "outputs": ["coverage/**/*"]
+      "dependsOn": [
+        "^build"
+      ],
+      "outputs": [
+        "coverage/**/*"
+      ]
     },
     "types:check": {
-      "dependsOn": ["^build"],
+      "dependsOn": [
+        "^build"
+      ],
       "outputs": []
     },
     "cleanup": {
-      "dependsOn": [],
-      "outputs": []
-    },
-    "types:emit": {
       "dependsOn": [],
       "outputs": []
     },
@@ -31,7 +37,9 @@
     },
     "//#audit": {
       "dependsOn": [],
-      "inputs": ["pnpm-lock.yaml"],
+      "inputs": [
+        "pnpm-lock.yaml"
+      ],
       "outputs": []
     }
   }
