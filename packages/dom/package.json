@@ -32,8 +32,7 @@
     "cleanup": "rm -rf ./dist",
     "prebuild": "pnpm cleanup"
   },
-  "peerDependencies": {
-  },
-  "devDependencies": {
+  "dependencies": {
+    "load-script": "^2.0.0"
   }
 }

@@ -171,9 +171,9 @@ importers:
 
   packages/cast-core:
     dependencies:
-      '@jdion/cast-utils':
+      '@jdion/dom':
         specifier: workspace:^
-        version: link:../cast-utils
+        version: link:../dom
       events:
         specifier: ^3.3.0
         version: 3.3.0
@@ -209,13 +209,11 @@ importers:
         specifier: '>=18'
         version: 18.2.0
 
-  packages/cast-utils:
+  packages/dom:
     dependencies:
       load-script:
         specifier: ^2.0.0
         version: 2.0.0
-
-  packages/dom: {}
 
   packages/eslint-config:
     dependencies:

@@ -3,8 +3,8 @@ import memoize from 'p-memoize'
 import type { CastOptions, CastState, Events, Player } from './cast.def'
 import { getCastStateFromEvent, getPlayerStateFromEvent } from './event/cast-event.service'
 import { forgetSession, getSessionId, persistSession } from './storage/cast-storage.service'
-import { loadScript } from '@jdion/cast-utils/load-script'
-import { isDom } from '@jdion/cast-utils/types'
+import { loadScript } from '@jdion/dom/load-script'
+import { isDom } from '@jdion/dom/types'
 
 import { EventEmitter } from 'events'
 
