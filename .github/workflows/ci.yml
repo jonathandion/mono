@@ -31,7 +31,9 @@ jobs:
 
       - name: Setup pnpm config
         run: pnpm config set store-dir $PNPM_CACHE_FOLDER
-        run: pnpm config set auto-install-peers true
+
+      - name: Setup pnpm config
+        run: pnpm config list
 
       - name: Install dependencies
         run: pnpm install
