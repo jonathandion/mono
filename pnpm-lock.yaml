@@ -11,6 +11,9 @@ importers:
       '@changesets/cli':
         specifier: ^2.26.2
         version: 2.26.2
+      '@jdion/cast':
+        specifier: workspace:*
+        version: link:packages/cast-core
       '@jdion/eslint-config':
         specifier: workspace:*
         version: link:packages/eslint-config
@@ -132,47 +135,10 @@ importers:
         specifier: ^4.4.9
         version: 4.4.9
 
-  examples/react-project:
-    dependencies:
-      react:
-        specifier: ^18.2.0
-        version: 18.2.0
-      react-dom:
-        specifier: ^18.2.0
-        version: 18.2.0(react@18.2.0)
-    devDependencies:
-      '@jdion/dom':
-        specifier: workspace:*
-        version: link:../../packages/dom
-      '@jdion/eslint-config':
-        specifier: workspace:*
-        version: link:../../packages/eslint-config
-      '@jdion/tailwindcss':
-        specifier: workspace:*
-        version: link:../../packages/tailwindcss
-      '@types/react':
-        specifier: ^18.2.21
-        version: 18.2.21
-      '@types/react-dom':
-        specifier: ^18.2.7
-        version: 18.2.7
-      '@vitejs/plugin-react-swc':
-        specifier: ^3.3.2
-        version: 3.3.2(vite@4.4.9)
-      autoprefixer:
-        specifier: ^10.4.15
-        version: 10.4.15(postcss@8.4.29)
-      postcss:
-        specifier: ^8.4.29
-        version: 8.4.29
-      tailwindcss:
-        specifier: ^3.3.3
-        version: 3.3.3
-
   packages/cast-core:
     dependencies:
       '@jdion/dom':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../dom
       events:
         specifier: ^3.3.0

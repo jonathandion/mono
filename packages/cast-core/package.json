@@ -40,7 +40,7 @@
     "types:check": "tsc --noEmit"
   },
   "dependencies": {
-    "@jdion/dom": "workspace:^",
+    "@jdion/dom": "workspace:*",
     "events": "^3.3.0",
     "p-memoize": "^7.1.1"
   },
