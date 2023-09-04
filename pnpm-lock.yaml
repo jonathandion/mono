@@ -94,10 +94,10 @@ importers:
   examples/cast-react-example:
     dependencies:
       '@jdion/cast':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../../packages/cast-core
       '@jdion/cast-react':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../../packages/cast-react
       react:
         specifier: ^18.2.0

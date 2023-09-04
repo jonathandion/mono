@@ -30,12 +30,12 @@
     "cleanup": "rm -rf ./dist",
     "prebuild": "pnpm cleanup"
   },
-  "devDependencies": {
-    "@jdion/cast": "workspace:*"
-  },
   "peerDependencies": {
     "@jdion/cast": ">=1.0.0",
     "@types/react": ">=18",
     "react": ">=18"
+  },
+  "devDependencies": {
+    "@jdion/cast": "workspace:*"
   }
 }
