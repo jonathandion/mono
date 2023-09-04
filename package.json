@@ -1,5 +1,5 @@
 {
-  "name": "@jdion/web-configs",
+  "name": "@jdion/mono",
   "version": "0.0.0",
   "private": true,
   "packageManager": "pnpm@latest",
@@ -19,9 +19,6 @@
     "lint:debug": "eslint . --debug",
     "generate:types": "ts-node --esm --project tsconfig.node.json ./scripts/generate2.ts",
     "lint:fix": "pnpm lint --fix"
-  },
-  "dependencies": {
-    "@jdion/cast": "workspace:*"
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.2",

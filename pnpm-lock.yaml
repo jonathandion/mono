@@ -7,10 +7,6 @@ settings:
 importers:
 
   .:
-    dependencies:
-      '@jdion/cast':
-        specifier: workspace:*
-        version: link:packages/cast-core
     devDependencies:
       '@changesets/cli':
         specifier: ^2.26.2
