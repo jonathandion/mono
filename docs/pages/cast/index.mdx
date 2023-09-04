@@ -1,0 +1,74 @@
+---
+title: 'Chromecast Library for the Browser'
+---
+
+import { Tabs, Tab } from 'nextra/components'
+import { Header } from './components/header.component'
+
+<Header/>
+
+`@jdion/cast` is a lightweight and intuitive API designed to simplify communication with Chromecast devices directly from your web browser.
+
+{/* prettier-ignore-start */}
+<div className="max-w-xs mx-auto mt-5 mb-8 text-center install">
+  <Tabs items={['npm', 'pnpm', 'yarn']}>
+    <Tab>
+```bash
+npm i @jdion/cast
+```
+    </Tab>
+    <Tab>
+```bash
+pnpm i @jdion/cast
+```
+    </Tab>
+    <Tab>
+```bash
+yarn add @jdion/cast
+```
+    </Tab>
+  </Tabs>
+</div>
+{/* prettier-ignore-end */}
+
+<div className="mb-20 text-center">
+  [Examples](/examples) ·
+  [Demo](/demo) ·
+  [GitHub Repository](https://github.com/jonathandion/mono/tree/main/packages/cast-core)
+</div>
+
+## Getting Started
+
+To initiate a cast session, simply call the `startCast` method from the `player` object of the `Cast` class instance:
+
+```ts
+import { Cast } from "@jdion/cast"
+
+(async () => {
+  const { player } = new Cast()
+
+  await player.startCast('https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4')
+})()
+````
+
+## React
+
+React hooks for `@jdion/cast`. This library adds some convenience methods when working with React & makes it a little easier to passing around the cast instance.
+
+<Tabs items={['npm', 'pnpm', 'yarn']}>
+    <Tab>
+```bash
+npm i @jdion/cast @jdion/cast-react
+```
+    </Tab>
+    <Tab>
+```bash
+pnpm i @jdion/cast @jdion/cast-react
+```
+    </Tab>
+    <Tab>
+```bash
+yarn add @jdion/cast @jdion/cast-react
+```
+</Tab>
+</Tabs>

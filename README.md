@@ -1,22 +1,10 @@
-# Web Configs
+# mono
 
-![build status](https://img.shields.io/github/actions/workflow/status/jonathandion/web-configs/release.yml?color=238636&label=build)
+This repository contains common modules for building web apps.
 
-This repository contains common configurations for building web apps.
+## Documentation
 
-## Configs
-
-This repo is managed as a monorepo that is composed of many npm packages, where each package has its own README and documentation describing usage.
-
-| Config | Version | Description
-|-|-|-|
-| [eslint-config-all](/packages/eslint-config-all/README.md) | [![npm](https://img.shields.io/npm/v/@jdion/eslint-config?color=238636&label=)](https://npmjs.com/package/@jdion/eslint-config) | Lint config for TypeScript, React projects
-
-## FAQ
-
-> Why not using Prettier?
-
-I prefer to use ESLint for formatting my code as it provides more fine-grained customization options. In addition to linting, ESLint can also be used to format code according to your preferences. Personally, I don't find the `printWidth` feature in Prettier to be particularly useful for my projects, so I choose to stick with ESLint.
+Visit [https://jdion.xyz](https://jdion.xyz) to view the full documentation.
 
 ## License
 

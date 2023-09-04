@@ -7,17 +7,18 @@
   "license": "MIT",
   "scripts": {
     "audit": "pnpm audit --audit-level high",
-    "build": "turbo run build --color --concurrency 13",
-    "dev": "turbo run dev --color --concurrency 13",
+    "build": "turbo run build --color --concurrency 14",
+    "dev": "turbo run dev --color --concurrency 14",
     "change": "changeset",
-    "cleanup": "turbo cleanup --concurrency 13 ",
-    "ci": "turbo run build types:check lint audit --color --concurrency 13",
+    "cleanup": "turbo cleanup --concurrency 14",
+    "ci": "turbo run build types:check lint audit --color --concurrency 14",
     "ci:debug": "act pull_request --secret-file my.secrets -s GITHUB_TOKEN=\"$(gh auth token)\" --container-architecture linux/amd64",
     "ci:publish": "pnpm publish -r",
     "ci:version": "changeset version && pnpm install --lockfile-only",
-    "lint": "eslint ./ --ext js,jsx,ts,tsx,json,mdx,md --max-warnings=0",
+    "lint": "eslint ./ --max-warnings=0",
     "lint:debug": "eslint . --debug",
-    "lint:fix": "eslint ./ --ext js,jsx,ts,tsx,json,mdx,md --max-warnings=0 --fix"
+    "generate:types": "ts-node --esm --project tsconfig.node.json ./scripts/generate2.ts",
+    "lint:fix": "pnpm lint --fix"
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.2",

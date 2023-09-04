@@ -1,0 +1,10 @@
+{
+  "index": {
+    "title": "Cast",
+    "type": "page",
+    "display": "hidden",
+    "theme": {
+      "sidebar": null
+    }
+  }
+}
