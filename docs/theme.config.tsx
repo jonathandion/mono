@@ -21,6 +21,7 @@ export default {
   nextThemes: {
     defaultTheme: 'dark',
   },
+  gitTimestamp: <></>,
   project: {
     link: 'https://github.com/jonathandion/mono',
   },

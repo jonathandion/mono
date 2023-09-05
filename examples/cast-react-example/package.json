@@ -9,8 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@jdion/cast": "workspace:*",
-    "@jdion/cast-react": "workspace:*",
+    "@jdion/cast": "1.0.4",
+    "@jdion/cast-react": "1.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

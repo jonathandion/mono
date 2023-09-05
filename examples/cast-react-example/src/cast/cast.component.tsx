@@ -47,7 +47,8 @@ export const CastDemo = () => {
   return (
     <div>
       <fieldset>
-        <button type="button" onClick={() => startCast}>Start Cast</button>
+        {/* eslint-disable-next-line @typescript-eslint/no-misused-promises */}
+        <button type="button" onClick={() => startCast()}>Start Cast</button>
         <button type="button" onClick={endCast}>End Cast</button>
         <br />
         <br />

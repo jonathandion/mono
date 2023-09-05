@@ -6,5 +6,9 @@
     "theme": {
       "sidebar": null
     }
+  },
+  "demo": {
+    "title": "Cast Demo",
+    "type": "page"
   }
 }

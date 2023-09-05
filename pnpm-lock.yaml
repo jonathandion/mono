@@ -56,6 +56,9 @@ importers:
 
   docs:
     dependencies:
+      '@jdion/cast':
+        specifier: workspace:^
+        version: link:../packages/cast-core
       '@jdion/tailwindcss':
         specifier: workspace:*
         version: link:../packages/tailwindcss
@@ -94,10 +97,10 @@ importers:
   examples/cast-react-example:
     dependencies:
       '@jdion/cast':
-        specifier: workspace:*
+        specifier: 1.0.4
         version: link:../../packages/cast-core
       '@jdion/cast-react':
-        specifier: workspace:*
+        specifier: 1.0.4
         version: link:../../packages/cast-react
       react:
         specifier: ^18.2.0

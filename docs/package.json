@@ -15,6 +15,7 @@
     "prebuild": "pnpm cleanup"
   },
   "dependencies": {
+    "@jdion/cast": "workspace:^",
     "@jdion/tailwindcss": "workspace:*",
     "next": "^13.4.19",
     "nextra": "^2.12.3",
