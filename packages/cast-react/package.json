@@ -1,6 +1,6 @@
 {
   "name": "@jdion/cast-react",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "Extended Cast library for ReactJS",
   "author": "Jonathan Dion <jonathandionalary@gmail.com> (https://github.com/jonathandion/)",
   "license": "MIT",
@@ -31,7 +31,7 @@
     "prebuild": "pnpm cleanup"
   },
   "peerDependencies": {
-    "@jdion/cast": ">=1.0.0",
+    "@jdion/cast": ">=1.0.4",
     "@types/react": ">=18",
     "react": ">=18"
   },

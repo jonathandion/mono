@@ -1,5 +1,13 @@
 # @jdion/eslint-config-ts
 
+## 1.0.4
+
+### Patch Changes
+
+- f986c1d: New packges added
+- Updated dependencies [f986c1d]
+  - @jdion/eslint-config-core@1.0.4
+
 ## 1.0.3
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @jdion/eslint-config-core
 
+## 1.0.4
+
+### Patch Changes
+
+- f986c1d: New packges added
+
 ## 1.0.3
 
 ## 1.0.2
