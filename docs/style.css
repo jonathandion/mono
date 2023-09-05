@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.install [role='tablist'] {
+  justify-content: center;
+}

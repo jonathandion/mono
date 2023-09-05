@@ -1,0 +1,55 @@
+{
+  "name": "@jdion/cast",
+  "type": "module",
+  "version": "1.0.0",
+  "author": "Jonathan Dion <jonathandionalary@gmail.com> (https://github.com/jonathandion/)",
+  "license": "MIT",
+  "keywords": [
+    "cast",
+    "sender",
+    "castjs",
+    "chromecast",
+    "google"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/cast.umd.cjs",
+      "import": "./dist/cast.esm.js"
+    }
+  },
+  "main": "./dist/cast.umd.cjs",
+  "module": "./dist/cast.esm.js",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/index.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18.17.1"
+  },
+  "scripts": {
+    "dev": "pnpm run types:emit --watch && vite build --watch --mode development",
+    "build": "vite build && pnpm run types:emit",
+    "types:emit": "tsc --project tsconfig.lib.json",
+    "types:check": "tsc --noEmit",
+    "cleanup": "rm -rf ./dist"
+  },
+  "dependencies": {
+    "@jdion/dom": "workspace:*",
+    "events": "^3.3.0",
+    "p-memoize": "^7.1.1"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.244",
+    "@types/chromecast-caf-sender": "^1.0.5",
+    "@types/events": "^3.0.0",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.9"
+  }
+}

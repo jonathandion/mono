@@ -30,7 +30,7 @@ jobs:
         run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
 
       - name: Setup pnpm config
-        run: pnpm config set store-dir $PNPM_CACHE_FOLDER
+        run: pnpm config set store-dir $PNPM_CACHE_FOLDER && pnpm config set auto-install-peers true
 
       - name: Install dependencies
         run: pnpm install

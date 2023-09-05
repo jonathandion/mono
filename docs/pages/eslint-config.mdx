@@ -1,0 +1,58 @@
+import { Tabs, Tab } from 'nextra/components'
+
+# `@jdion/eslint-config`
+
+[![npm](https://img.shields.io/npm/v/@jdion/eslint-config?color=238636&label=)](https://npmjs.com/package/@jdion/eslint-config)
+
+- Lint and format code (No Prettier)
+- Designed to work with TypeScript, React
+- Lint support for json, yaml, markdown files
+
+{/* prettier-ignore-start */}
+  <Tabs items={['npm', 'pnpm', 'yarn']}>
+    <Tab>
+```bash
+npm install -D eslint @jdion/eslint-config
+```
+    </Tab>
+    <Tab>
+```bash
+pnpm add -D eslint @jdion/eslint-config
+```
+    </Tab>
+    <Tab>
+```bash
+yarn add -D eslint @jdion/eslint-config
+```
+    </Tab>
+  </Tabs>
+{/* prettier-ignore-end */}
+
+## Usage
+
+Create a ESLint configuration file `.eslintrc` with:
+
+```json
+{
+  "extends": "@jdion"
+}
+```
+
+### Add lint scripts
+
+In your `package.json` add the following scripts:
+
+```json
+{
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  }
+}
+```
+
+## FAQ
+
+> Why not using Prettier?
+
+I prefer to use ESLint for formatting my code as it provides more fine-grained customization options. In addition to linting, ESLint can also be used to format code according to your preferences. Personally, I don't find the `printWidth` feature in Prettier to be particularly useful for my projects, so I choose to stick with ESLint.

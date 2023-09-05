@@ -12,6 +12,6 @@
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
   "ignore": [
-    "@example/*"
+    "*example*"
   ]
 }

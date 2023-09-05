@@ -1,7 +1,7 @@
-export const promisify = <T>(callbackBasedFunction: (...args: unknown[]) => void): (...args: unknown[]) => Promise<T> => {
+export const promisify = <T>(cb: (...args: unknown[]) => void): (...args: unknown[]) => Promise<T> => {
   return function (...args: unknown[]): Promise<T> {
     return new Promise<T>((resolve, reject) => {
-      callbackBasedFunction(...args, (error: unknown, result: T) => {
+      cb(...args, (error: unknown, result: T) => {
         if (error) {
           reject(error)
         }
