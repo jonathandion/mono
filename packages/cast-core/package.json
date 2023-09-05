@@ -35,9 +35,10 @@
   },
   "scripts": {
     "dev": "pnpm run types:emit --watch && vite build --watch --mode development",
-    "build": "concurrently 'vite build' 'pnpm run types:emit'",
+    "build": "vite build && pnpm run types:emit",
     "types:emit": "tsc --project tsconfig.lib.json",
-    "types:check": "tsc --noEmit"
+    "types:check": "tsc --noEmit",
+    "cleanup": "rm -rf ./dist"
   },
   "dependencies": {
     "@jdion/dom": "workspace:*",

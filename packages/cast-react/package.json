@@ -22,7 +22,7 @@
   },
   "scripts": {
     "dev": "concurrently 'pnpm run build:commonjs --watch' 'pnpm run types:emit --watch'",
-    "build": "concurrently 'pnpm build:commonjs' 'pnpm types:emit'",
+    "build": "pnpm build:commonjs && pnpm types:emit",
     "build:commonjs": "swc src --out-dir dist --config-file=../../.swcrc.json",
     "types:emit": "tsc --project tsconfig.lib.json",
     "types:check": "tsc --noEmit",
