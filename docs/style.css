@@ -79,3 +79,7 @@
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
+
+.install [role='tablist'] {
+  justify-content: center;
+}

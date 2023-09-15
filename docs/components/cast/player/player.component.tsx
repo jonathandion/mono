@@ -1,11 +1,11 @@
 import { ExitIcon, PauseIcon, PlayIcon, SpeakerLoudIcon, SpeakerOffIcon, VideoIcon } from '@radix-ui/react-icons'
+import { Badge } from '../../ui/badge'
 import { Button } from '../../ui/button'
 import { Slider } from '../../ui/slider'
 import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from '../../ui/card'
@@ -16,7 +16,7 @@ import { useState } from 'react'
 export const Player = () => {
   const { player } = useCast()
   const { toggleMute, togglePlay, setVolume, state } = player
-  const { isPlaying, volume, title, isMuted } = state
+  const { isPlaying, volume, isMuted } = state
   const playerState = useEventListener('playerStateChanged')
   const castState = useEventListener('castStateChanged')
   const [volumeInput, setVolumeInput] = useState(1)
@@ -39,28 +39,33 @@ export const Player = () => {
 
   return (
     <div>
-      <Card>
-        <CardHeader>
-          <CardTitle>{title}</CardTitle>
-          <CardDescription>Card Description</CardDescription>
+      <Card className="!bg-inherit">
+        <CardHeader className="flex justify-between flex-row items-center">
+          <div className="grid gap-2.5">
+            <CardTitle>Sintel (2010) </CardTitle>
+            <CardDescription>Third Open Movie by Blender Foundation</CardDescription>
+            <div className="flex align-items">
+              <Badge variant="outline" className="mr-2">Animation</Badge>
+              <Badge variant="outline" className="mr-2">Short</Badge>
+              <Badge variant="outline">Fantasy</Badge>
+            </div>
+          </div>
+          <img className="w-full max-w-xs h-32 object-cover border border-slate-800 rounded-md" src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/Sintel.jpg" alt="Sintel Poster" />
         </CardHeader>
         <CardContent>
-          <Button onClick={startCast}>
+          <Button variant="outline" onClick={startCast}>
             <span className="mr-1">Cast</span>
             <VideoIcon/>
           </Button>
-          <Button onClick={endCast}>
+          <Button variant="outline" onClick={endCast}>
             <ExitIcon/>
           </Button>
           <Separator/>
-          <Button onClick={() => togglePlay()}>{isPlaying ? <PauseIcon/> : <PlayIcon />}</Button>
-          <Button onClick={() => toggleMute()}>{isMuted ? <SpeakerLoudIcon /> : <SpeakerOffIcon/>}</Button>
+          <Button variant="outline" onClick={() => togglePlay()}>{isPlaying ? <PauseIcon/> : <PlayIcon />}</Button>
+          <Button variant="outline" onClick={() => toggleMute()}>{isMuted ? <SpeakerLoudIcon /> : <SpeakerOffIcon/>}</Button>
           <Separator/>
           <Slider defaultValue={[volume]} value={[volumeInput || volume]} max={1} step={0.01} onValueChange={handleVolume} onValueCommit={onValueCommit} />
         </CardContent>
-        <CardFooter>
-          <p>Card Footer</p>
-        </CardFooter>
       </Card>
     </div>
   )

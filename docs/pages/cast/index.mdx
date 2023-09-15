@@ -109,7 +109,7 @@ Import the `useCast` hook from the `@jdion/cast-react` package:
 ```tsx {4}
 import { useCast } from "@jdion/cast-react"
 
-const Component = () => {
+const MyComponent = () => {
   const { player } = useCast()
 
   return null;
@@ -118,12 +118,12 @@ const Component = () => {
 
 ### Start Casting
 
-To start casting, use the `startCast` method from the player object:
+To start casting, use the `startCast` method from the `player` object:
 
 ```tsx {7}
 import { useCast } from "@jdion/cast-react"
 
-const Component = () => {
+const MyComponent = () => {
   const { player } = useCast()
 
   const startCast = async () => {
@@ -135,5 +135,9 @@ const Component = () => {
  )
 }
 ```
+
+### Done 🎉
+
+You should now have the capability to cast your media. For more complex use cases, please explore the [examples](https://github.com/jonathandion/mono/tree/main/examples) folder. If you're interested in enhancing the documentation, feel free to contribute.
 
 </Steps>
