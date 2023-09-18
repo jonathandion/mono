@@ -32,7 +32,7 @@ export const Header = () => (
       Chromecast Library for the browser
     </p>
 
-    <div className="flex min-h-[3rem] max-w-[28rem] flex-wrap justify-center gap-2">
+    <div className="flex flex-wrap justify-center gap-2">
       <a
         aria-label="Version"
         href="https://www.npmjs.com/package/@jdion/cast"

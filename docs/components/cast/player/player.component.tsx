@@ -83,7 +83,7 @@ export const Player = () => {
   }
 
   return (
-    <Card className="!bg-inherit max-w-2xl">
+    <Card className="!bg-inherit m-auto">
       <CardHeader className="flex justify-between flex-row items-center">
         <div className="grid gap-2.5">
           <CardTitle>Sintel (2010) </CardTitle>
