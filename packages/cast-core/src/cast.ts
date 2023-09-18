@@ -88,7 +88,7 @@ export class Cast {
     ee.removeListener(eventName, cb)
   }
 
-  public getState() {
+  public getState = () => {
     return this.state
   }
 
@@ -153,9 +153,20 @@ export class Cast {
 
     seek: (seconds: number) => {
       if (!this.remotePlayer) return
+      if (!this.controller) return
 
       this.remotePlayer.currentTime = seconds
-      this.controller?.seek()
+      this.controller.seek()
+    },
+
+    seekPercentage: (percentage: number) => {
+      if (!this.remotePlayer) return
+      if (!this.controller) return
+
+      const time = this.controller.getSeekTime(percentage, this.remotePlayer.duration)
+
+      this.remotePlayer.currentTime = time
+      this.controller.seek()
     },
 
     endCast: () => {
