@@ -31,7 +31,6 @@ jobs:
         run: pnpm install
 
       - name: Build
-        working-directory: ./docs
         run: pnpm run build
 
       - name: Deploy
