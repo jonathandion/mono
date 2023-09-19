@@ -1,10 +1,12 @@
 name: Release
 on:
   push:
-    branches: [$default-branch]
+    branches:
+      - main
 env:
   CI: true
   PNPM_CACHE_FOLDER: .pnpm-store
+
 jobs:
   release:
     if: github.repository == 'jonathandion/mono'
