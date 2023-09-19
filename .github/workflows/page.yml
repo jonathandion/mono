@@ -1,0 +1,45 @@
+name: Github Pages deployment
+on:
+  push:
+    paths:
+      - 'docs/**'  
+    branches:
+      - main
+env:
+  CI: true
+  PNPM_CACHE_FOLDER: .pnpm-store
+jobs:
+  build-and-deploy:
+    timeout-minutes: 15
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./docs
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.17.1
+
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8.6.11
+
+      - name: Setup pnpm config
+        run: pnpm config set store-dir $PNPM_CACHE_FOLDER
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build
+        run: pnpm run build
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: dist
