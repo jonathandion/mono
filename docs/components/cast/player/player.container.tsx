@@ -1,4 +1,4 @@
-import { CastProvider, } from '@jdion/cast-react'
+import { CastProvider } from '@jdion/cast-react'
 
 import { Cast } from '@jdion/cast'
 import { Player } from './player.component'

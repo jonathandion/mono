@@ -1,17 +1,18 @@
-import * as React from 'react'
-import * as SeparatorPrimitive from '@radix-ui/react-separator'
+import type { ComponentPropsWithoutRef, ElementRef } from 'react'
+import { forwardRef } from 'react'
+import { Root } from '@radix-ui/react-separator'
 
 import { cn } from '@jdion/tailwindcss/classnames'
 
-const Separator = React.forwardRef<
-React.ElementRef<typeof SeparatorPrimitive.Root>,
-React.ComponentPropsWithoutRef<typeof SeparatorPrimitive.Root>
+const Separator = forwardRef<
+ElementRef<typeof Root>,
+ComponentPropsWithoutRef<typeof Root>
 >(
   (
     { className, orientation = 'horizontal', decorative = true, ...props },
     ref,
   ) => (
-    <SeparatorPrimitive.Root
+    <Root
       ref={ref}
       decorative={decorative}
       orientation={orientation}
@@ -20,12 +21,12 @@ React.ComponentPropsWithoutRef<typeof SeparatorPrimitive.Root>
         orientation === 'horizontal' ? 'h-[1px] w-full' : 'h-full w-[1px]',
         className,
       )}
-    // eslint-disable-next-line react/jsx-props-no-spreading
+      // eslint-disable-next-line react/jsx-props-no-spreading
       {...props}
     />
   ),
 )
 
-Separator.displayName = SeparatorPrimitive.Root.displayName
+Separator.displayName = Root.displayName
 
 export { Separator }
