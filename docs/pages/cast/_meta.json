@@ -2,8 +2,5 @@
   "index": {
     "type": "page",
     "display": "hidden"
-  },
-  "demo": {
-    "type": "page"
   }
 }

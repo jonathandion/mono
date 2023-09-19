@@ -3,16 +3,15 @@
   "version": "1.0.0",
   "private": true,
   "description": "Documentation for the Cast library",
-  "author": "",
-  "license": "ISC",
-  "keywords": [],
-  "main": "index.js",
+  "author": "Jonathan Dion <jonathandionalary@gmail.com> (https://github.com/jonathandion/)",
+  "license": "MIT",
   "scripts": {
-    "build": "next build",
-    "dev": "next dev -p 4444",
-    "start": "next start -p 4444",
+    "build": "next build && next export",
     "cleanup": "rm -rf ./dist",
-    "prebuild": "pnpm cleanup"
+    "dev": "next dev -p 4444",
+    "prebuild": "pnpm cleanup",
+    "start": "next start -p 4444",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "@jdion/cast": "workspace:*",
@@ -39,6 +38,7 @@
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.8",
     "autoprefixer": "^10.4.15",
+    "gh-pages": "^6.0.0",
     "postcss": "^8.4.29",
     "tailwindcss": "^3.3.3"
   }
