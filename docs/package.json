@@ -6,7 +6,7 @@
   "author": "Jonathan Dion <jonathandionalary@gmail.com> (https://github.com/jonathandion/)",
   "license": "MIT",
   "scripts": {
-    "build": "next build && next export",
+    "build": "next build",
     "cleanup": "rm -rf ./dist",
     "dev": "next dev -p 4444",
     "prebuild": "pnpm cleanup",
