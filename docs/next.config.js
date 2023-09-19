@@ -7,6 +7,7 @@ const withNextra = require('nextra')({
 module.exports = withNextra({
   distDir: 'dist',
   output: 'export',
+  basePath: '/mono',
   images: {
     unoptimized: true,
   },
