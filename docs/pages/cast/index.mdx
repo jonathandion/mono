@@ -3,14 +3,22 @@ title: 'Chromecast Library for the Browser'
 ---
 
 import { Tabs, Tab } from 'nextra/components'
+import { Steps } from 'nextra/components'
 import { Header } from '../../components/cast/header.component'
+import { CastPlayer } from '../../components/cast/player/player.container.tsx'
+
+<br/>
+
+<div className="max-w-2xl m-auto"> 
 
 <Header/>
 
-`@jdion/cast` is a lightweight and intuitive API designed to simplify communication with Chromecast devices directly from your web browser.
+<p className="my-8">`@jdion/cast` is a lightweight and intuitive API designed to simplify communication with Chromecast devices directly from your web browser.</p>
+
+<CastPlayer />
 
 {/* prettier-ignore-start */}
-<div className="max-w-xs mx-auto mt-5 mb-8 text-center install">
+<div className="max-w-xs mx-auto m-8 text-center install">
   <Tabs items={['npm', 'pnpm', 'yarn']}>
     <Tab>
 ```bash
@@ -32,9 +40,9 @@ yarn add @jdion/cast
 {/* prettier-ignore-end */}
 
 <div className="mb-20 text-center">
-  [Examples](/examples) ·
-  [Demo](/demo) ·
+  [Examples](https://github.com/jonathandion/mono/tree/main/examples) ·
   [GitHub Repository](https://github.com/jonathandion/mono/tree/main/packages/cast-core)
+</div>
 </div>
 
 ## Getting Started
@@ -72,3 +80,71 @@ yarn add @jdion/cast @jdion/cast-react
 ```
 </Tab>
 </Tabs>
+
+<Steps>
+
+### Initiating
+
+Create a `Cast` instance from `@jdion/cast`
+
+```tsx
+import { Cast } from "@jdion/cast"
+
+const cast = = new Cast()
+```
+
+### Adding the Cast Provider
+
+Import the `CastProvider` component from the `@jdion/cast-react` package. Pass your initialized `Cast` instance to the `instance` prop of `CastProvider`.
+
+```tsx {6-8}
+import { CastProvider } from "@jdion/cast-react"
+
+const cast = = new Cast()
+
+const App = () => {
+  <CastProvider instance={cast}>
+    {children}
+  </CastProvider>
+}
+```
+ 
+### Initiating Casting
+
+Import the `useCast` hook from the `@jdion/cast-react` package:
+ 
+```tsx {4}
+import { useCast } from "@jdion/cast-react"
+
+const MyComponent = () => {
+  const { player } = useCast()
+
+  return null;
+}
+```
+
+### Start Casting
+
+To start casting, use the `startCast` method from the `player` object:
+
+```tsx {7}
+import { useCast } from "@jdion/cast-react"
+
+const MyComponent = () => {
+  const { player } = useCast()
+
+  const startCast = async () => {
+    await player.startCast('https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4')
+  }
+
+ return (
+   <button onClick={startCast}>Cast</button>
+ )
+}
+```
+
+### Done 🎉
+
+You should now have the capability to cast your media. For more complex use cases, please explore the [examples](https://github.com/jonathandion/mono/tree/main/examples) folder. If you're interested in enhancing the documentation, feel free to contribute.
+
+</Steps>

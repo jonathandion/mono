@@ -1,23 +1,14 @@
 {
   "index": {
-    "title": "Introduction",
     "type": "page",
     "display": "hidden"
   },
   "eslint-config": {
-    "title": "Eslint",
     "type": "page",
-    "display": "hidden",
-    "theme": {
-      "sidebar": null
-    }
+    "display": "hidden"
   },
   "cast": {
-    "title": "Cast",
     "type": "page",
-    "display": "hidden",
-    "theme": {
-      "sidebar": null
-    }
+    "display": "hidden"
   }
 }

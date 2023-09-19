@@ -38,6 +38,7 @@ export interface Player {
   getState: () => PlayerState;
   seek: (seconds: number) => void;
   setVolume: (volume: number) => void;
+  seekPercentage: (percentage: number) => void;
   startCast: (contentId: string, contentType?: string) => Promise<Promise<void>>;
   getFormattedTime: (timeInSec: number) => string;
   state: PlayerState;

@@ -7,9 +7,14 @@ export default {
   logo() {
     return (
       <h1>
-        @jdion 
+        jdion 
       </h1>
     )
+  },
+  useNextSeoProps() {
+    return {
+      titleTemplate: '%s – jdion',
+    }
   },
   components: {
     table: Table.Root,
@@ -21,6 +26,7 @@ export default {
   nextThemes: {
     defaultTheme: 'dark',
   },
+  gitTimestamp: <></>,
   project: {
     link: 'https://github.com/jonathandion/mono',
   },
