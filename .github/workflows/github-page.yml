@@ -33,8 +33,13 @@ jobs:
       - name: Build
         run: pnpm run build
 
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          folder: ./docs/dist
+
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4
+        uses: actions/deploy-pages@v2
         with:
           branch: gh-pages
           folder: ./docs/dist
