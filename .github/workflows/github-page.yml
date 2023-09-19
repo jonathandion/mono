@@ -1,8 +1,6 @@
 name: Github Pages deployment
 on:
   push:
-    paths:
-      - 'docs/**'  
     branches:
       - main
 env:
