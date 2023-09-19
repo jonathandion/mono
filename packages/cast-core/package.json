@@ -34,7 +34,7 @@
     "node": ">=18.17.1"
   },
   "scripts": {
-    "dev": "pnpm run types:emit --watch && vite build --watch --config ./vite.config.ts",
+    "dev": "pnpm run types:emit --watch && vite build --watch",
     "build": "vite build && pnpm run types:emit",
     "types:emit": "tsc --project tsconfig.lib.json",
     "types:check": "tsc --noEmit",
