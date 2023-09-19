@@ -1,13 +1,25 @@
 name: Github Pages deployment
+
 on:
+  # Runs on pushes targeting the default branch
   push:
-    branches:
-      - main
+    branches: [$default-branch]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 env:
   CI: true
   PNPM_CACHE_FOLDER: .pnpm-store
+
 jobs:
-  build-and-deploy:
+  build:
     timeout-minutes: 15
     runs-on: ubuntu-latest
 
@@ -36,10 +48,21 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          folder: ./docs/dist
+          path: ./docs/dist
 
-      - name: Deploy
+  deploy:
+    needs: build
+
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v2
-        with:
-          branch: gh-pages
-          folder: ./docs/dist

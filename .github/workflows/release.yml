@@ -1,8 +1,7 @@
 name: Release
 on:
   push:
-    branches:
-      - main
+    branches: [$default-branch]
 env:
   CI: true
   PNPM_CACHE_FOLDER: .pnpm-store
