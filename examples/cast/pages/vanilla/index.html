@@ -1,13 +1,12 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cast Vanilla Demo</title>
-</head>
-
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cast Demo</title>
+  </head>
+  <body>
+  <h1>Demo Vanilla JS</h1>
   <fieldset>
     <button id="start-cast-button">Start Cast</button>
     <button id="end-cast-button">End Cast</button>
@@ -32,11 +31,12 @@
     <label>Time <span id="time"></span></label>
     <br />
   </fieldset>
+
   <h2>Cast State</h2>
   <pre id="cast-state"></pre>
   <h2>Player State</h2>
   <pre id="player-state"></pre>
-  <script type="module" src="/src/main.ts"></script>
-</body>
 
+  <script type="module" src="../../src/cast/main.ts"></script>
+  </body>
 </html>

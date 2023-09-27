@@ -130,7 +130,7 @@ importers:
         specifier: ^3.3.3
         version: 3.3.3
 
-  examples/cast-react-example:
+  examples/cast:
     dependencies:
       '@jdion/cast':
         specifier: workspace:*
@@ -156,19 +156,6 @@ importers:
         version: 3.3.2(vite@4.4.9)
       vite:
         specifier: ^4.4.5
-        version: 4.4.9
-
-  examples/cast-vanilla-example:
-    dependencies:
-      '@jdion/cast':
-        specifier: workspace:^
-        version: link:../../packages/cast-core
-    devDependencies:
-      typescript:
-        specifier: ^5.2.2
-        version: 5.2.2
-      vite:
-        specifier: ^4.4.9
         version: 4.4.9
 
   packages/cast-core:
@@ -363,6 +350,21 @@ importers:
       tailwindcss:
         specifier: ^3.3.3
         version: 3.3.3
+
+  packages/tilt-react:
+    devDependencies:
+      '@types/react':
+        specifier: ^18.0.29
+        version: 18.2.21
+      '@types/react-dom':
+        specifier: ^18.0.11
+        version: 18.2.7
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.2.0(react@18.2.0)
 
 packages:
 
@@ -7536,7 +7538,6 @@ packages:
       loose-envify: 1.4.0
       react: 18.2.0
       scheduler: 0.23.0
-    dev: false
 
   /react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
@@ -7876,7 +7877,6 @@ packages:
     resolution: {integrity: sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==}
     dependencies:
       loose-envify: 1.4.0
-    dev: false
 
   /scroll-into-view-if-needed@3.0.10:
     resolution: {integrity: sha512-t44QCeDKAPf1mtQH3fYpWz8IM/DyvHLjs8wUvvwMYxk5moOqCzrMSxK6HQVD0QVmVjXFavoFIPRVrMuJPKAvtg==}
