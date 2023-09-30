@@ -1,26 +1,27 @@
 {
-  "name": "@jdion/cast-react",
-  "version": "1.0.4",
-  "description": "Extended Cast library for ReactJS",
+  "name": "@jdion/tilt-react",
+  "version": "1.0.0",
+  "description": "Tilt for React JS",
   "author": "Jonathan Dion <jonathandionalary@gmail.com> (https://github.com/jonathandion/)",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jonathandion/mono/issues"
+  },
   "keywords": [
     "react",
-    "hooks",
-    "sender",
-    "google",
-    "chromecast",
-    "cast",
-    "castjs"
+    "parallax",
+    "tilt",
+    "hover",
+    "parallax"
   ],
-  "main": "dist/index.js",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "engines": {
-    "node": ">=18.17.1"
-  },
   "scripts": {
     "dev": "concurrently 'pnpm run build:commonjs --watch' 'pnpm run types:emit --watch'",
     "build": "pnpm build:commonjs && pnpm types:emit",
@@ -32,11 +33,9 @@
     "prebuild": "pnpm cleanup"
   },
   "peerDependencies": {
-    "@jdion/cast": ">=1.0.4",
-    "@types/react": ">=18",
-    "react": ">=18"
-  },
-  "devDependencies": {
-    "@jdion/cast": "workspace:*"
+    "@types/react": "^18.0.29",
+    "@types/react-dom": "^18.0.11",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
