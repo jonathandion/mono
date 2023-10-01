@@ -84,8 +84,8 @@ export const Player = () => {
 
   return (
     <Card className="!bg-inherit m-auto">
-      <CardHeader className="flex justify-between flex-row items-center">
-        <div className="grid gap-2.5">
+      <CardHeader className="flex justify-between md:flex-row md:items-center">
+        <div className="grid gap-2.5 md:mb-0 mb-5">
           <CardTitle>Sintel (2010) </CardTitle>
           <CardDescription>Third Open Movie by Blender Foundation</CardDescription>
           <div className="flex align-items">
