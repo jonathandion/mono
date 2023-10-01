@@ -15,8 +15,8 @@
   "dependencies": {
     "@jdion/cast": "workspace:*",
     "@jdion/cast-react": "workspace:*",
-    "@jdion/tilt-react": "workspace:*",
     "@jdion/tailwindcss": "workspace:*",
+    "@jdion/tilt-react": "workspace:*",
     "@radix-ui/react-collapsible": "^1.0.3",
     "@radix-ui/react-icons": "^1.3.0",
     "@radix-ui/react-label": "^2.0.2",
