@@ -57,9 +57,6 @@ const App = () => {
 
 | Property         | Signature           | 
 | -------------    |:-------------:|
-| onMouseEnter     | (event: React.SyntheticEvent) -> void  |
-| onMouseMove      | (event: React.SyntheticEvent) -> void  |
-| onMouseLeave     | (event: React.SyntheticEvent) -> void  |
 | options          | Options    |
 
 ## Alternatives

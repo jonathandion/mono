@@ -1,5 +1,6 @@
 import type { HTMLProps, ReactNode, RefObject } from 'react'
 import { Component, createRef } from 'react'
+import { isDom } from '@jdion/dom/types'
 
 interface Options {
   reverse: boolean; 
@@ -172,6 +173,8 @@ export class Tilt extends Component<Props, State> {
 
   render() {
     const { children, className } = this.props
+
+    if (!isDom) return null
 
     return (
       <div 
