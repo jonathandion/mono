@@ -35,9 +35,6 @@
     "cleanup": "rm -rf ./dist",
     "prebuild": "pnpm cleanup"
   },
-  "dependencies": {
-    "@jdion/dom": "workspace:*"
-  },
   "peerDependencies": {
     "@types/react": "^18.0.29",
     "@types/react-dom": "^18.0.11",
