@@ -20,11 +20,7 @@ A tiny requestAnimationFrame powered 60+fps lightweight parallax hover tilt effe
 ## Install
 
 ```bash
-pnpm add react-tilt react react-dom
-# or
-npm install react-tilt react react-dom
-# or
-yarn add react-tilt react react-dom
+npm install @jdion/tilt-react react react-dom
 ```
 
 ## Usage
