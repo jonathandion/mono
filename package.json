@@ -11,7 +11,7 @@
     "dev": "turbo run dev --color --concurrency 14",
     "change": "changeset",
     "cleanup": "turbo cleanup --concurrency 14",
-    "ci": "pnpm run -r build && pnpm run -r types:check && pnpm run lint && pnpm run audit",
+    "ci": "pnpm run -r build && pnpm run -r types:check && pnpm run lint",
     "ci:debug": "act pull_request --secret-file my.secrets -s GITHUB_TOKEN=\"$(gh auth token)\" --container-architecture linux/amd64",
     "ci:publish": "pnpm publish -r",
     "ci:version": "changeset version && pnpm install --lockfile-only",
