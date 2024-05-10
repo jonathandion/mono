@@ -26,7 +26,7 @@
     "@radix-ui/react-switch": "^1.0.3",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
-    "next": "^13.4.19",
+    "next": "^14.0.0",
     "nextra": "^2.12.3",
     "nextra-theme-docs": "^2.12.3",
     "react": "^18.2.0",
