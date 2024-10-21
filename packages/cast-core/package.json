@@ -38,7 +38,7 @@
     "p-memoize": "^7.1.1"
   },
   "devDependencies": {
-    "@types/chrome": "^0.0.244",
+    "@types/chrome": "^0.0.279",
     "@types/chromecast-caf-sender": "^1.0.5",
     "@types/events": "^3.0.0",
     "typescript": "^5.2.2"
