@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "Documentation for the Cast library",
-  "author": "Jonathan Dion <jonathandionalary@gmail.com> (https://github.com/jonathandion/)",
+  "author": "Jonathan Dion (https://github.com/jonathandion/)",
   "license": "MIT",
   "scripts": {
     "build": "next build",

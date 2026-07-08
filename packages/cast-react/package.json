@@ -2,7 +2,7 @@
   "name": "@jdion/cast-react",
   "version": "1.0.4",
   "description": "Extended Cast library for ReactJS",
-  "author": "Jonathan Dion <jonathandionalary@gmail.com> (https://github.com/jonathandion/)",
+  "author": "Jonathan Dion (https://github.com/jonathandion/)",
   "license": "MIT",
   "keywords": [
     "react",

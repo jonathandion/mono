@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "packageManager": "pnpm@latest",
-  "author": "Jonathan Dion <jonathandionalary@gmail.com> (https://github.com/jonathandion/)",
+  "author": "Jonathan Dion (https://github.com/jonathandion/)",
   "license": "MIT",
   "scripts": {
     "audit": "pnpm audit --audit-level high",
