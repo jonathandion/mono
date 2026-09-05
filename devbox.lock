@@ -1,29 +1,107 @@
 {
   "lockfile_version": "1",
   "packages": {
-    "act@latest": {
-      "last_modified": "2023-08-30T00:25:28Z",
-      "resolved": "github:NixOS/nixpkgs/a63a64b593dcf2fe05f7c5d666eb395950f36bc9#act",
+    "act@0.2.89": {
+      "last_modified": "2026-07-23T05:10:05Z",
+      "resolved": "github:NixOS/nixpkgs/7525d999cd850b9a488817abc89c75dc733acf17#act",
       "source": "devbox-search",
-      "version": "0.2.49"
+      "version": "0.2.89",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/9r4n3z61s9zc94k15cn321fvamdrbvcn-act-0.2.89",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/9r4n3z61s9zc94k15cn321fvamdrbvcn-act-0.2.89"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/jp880cq3byf2v5ci9sgfa8vwihq7a2hn-act-0.2.89",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/jp880cq3byf2v5ci9sgfa8vwihq7a2hn-act-0.2.89"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/8jl3zr56bwggpxwc4si162xd68kvcz9l-act-0.2.89",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/8jl3zr56bwggpxwc4si162xd68kvcz9l-act-0.2.89"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/3cw87pp2phpximw34ssdcdz1qq1zlnnk-act-0.2.89",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/3cw87pp2phpximw34ssdcdz1qq1zlnnk-act-0.2.89"
+        }
+      }
     },
     "docker@latest": {
       "last_modified": "2023-08-30T00:25:28Z",
       "resolved": "github:NixOS/nixpkgs/a63a64b593dcf2fe05f7c5d666eb395950f36bc9#docker",
       "source": "devbox-search",
-      "version": "20.10.25"
+      "version": "20.10.25",
+      "systems": {
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "path": "/tmp/containerbase/cache/nix/store/4j1b56qfgnm62xcvhd19njkbwr16afra-docker-20.10.25",
+              "default": true
+            },
+            {
+              "name": "man",
+              "path": "/tmp/containerbase/cache/nix/store/9zpyc57626f7d15ddqvv292bbpic8882-docker-20.10.25-man",
+              "default": true
+            }
+          ]
+        }
+      }
     },
     "nodePackages_latest.pnpm@8.6.11": {
       "last_modified": "2023-08-10T23:14:40Z",
       "resolved": "github:NixOS/nixpkgs/cf73a86c35a84de0e2f3ba494327cf6fb51c0dfd#nodePackages_latest.pnpm",
       "source": "devbox-search",
-      "version": "8.6.11"
+      "version": "8.6.11",
+      "systems": {
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "path": "/tmp/containerbase/cache/nix/store/bk45jssi21pilkp3yincdhqpmad0sggz-pnpm-8.6.11",
+              "default": true
+            }
+          ]
+        }
+      }
     },
     "nodejs@18.17.1": {
       "last_modified": "2023-08-30T00:25:28Z",
+      "plugin_version": "0.0.4",
       "resolved": "github:NixOS/nixpkgs/a63a64b593dcf2fe05f7c5d666eb395950f36bc9#nodejs_18",
       "source": "devbox-search",
-      "version": "18.17.1"
+      "version": "18.17.1",
+      "systems": {
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "path": "/tmp/containerbase/cache/nix/store/xy98iqhr2dk4bddk50g6j9n214170vd8-nodejs-18.17.1",
+              "default": true
+            }
+          ]
+        }
+      }
     }
   }
 }
