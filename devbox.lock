@@ -1,11 +1,53 @@
 {
   "lockfile_version": "1",
   "packages": {
-    "act@latest": {
-      "last_modified": "2023-08-30T00:25:28Z",
-      "resolved": "github:NixOS/nixpkgs/a63a64b593dcf2fe05f7c5d666eb395950f36bc9#act",
+    "act@0.2.89": {
+      "last_modified": "2026-08-27T07:16:00Z",
+      "resolved": "github:NixOS/nixpkgs/c27cdad491a991b11ed731760aa2ef8db0cb0410#act",
       "source": "devbox-search",
-      "version": "0.2.49"
+      "version": "0.2.89",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/cz98ma0cdj5szlz60qy4dj6mw8xrhp7m-act-0.2.89",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/cz98ma0cdj5szlz60qy4dj6mw8xrhp7m-act-0.2.89"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/gmmd6m6746g0bd3bg720jv2xgn476cjd-act-0.2.89",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/gmmd6m6746g0bd3bg720jv2xgn476cjd-act-0.2.89"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/8jl3zr56bwggpxwc4si162xd68kvcz9l-act-0.2.89",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/8jl3zr56bwggpxwc4si162xd68kvcz9l-act-0.2.89"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/q7v3bnnhia2vqajvx6039yxkgs4v0wxm-act-0.2.89",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/q7v3bnnhia2vqajvx6039yxkgs4v0wxm-act-0.2.89"
+        }
+      }
     },
     "docker@latest": {
       "last_modified": "2023-08-30T00:25:28Z",
@@ -21,6 +63,7 @@
     },
     "nodejs@18.17.1": {
       "last_modified": "2023-08-30T00:25:28Z",
+      "plugin_version": "0.0.5",
       "resolved": "github:NixOS/nixpkgs/a63a64b593dcf2fe05f7c5d666eb395950f36bc9#nodejs_18",
       "source": "devbox-search",
       "version": "18.17.1"
