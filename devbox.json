@@ -2,7 +2,7 @@
   "packages": [
     "nodejs@18.17.1",
     "nodePackages_latest.pnpm@8.6.11",
-    "act@latest",
+    "act@0.2.89",
     "docker@latest"
   ],
   "shell": {
