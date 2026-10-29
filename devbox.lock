@@ -1,11 +1,43 @@
 {
   "lockfile_version": "1",
   "packages": {
-    "act@latest": {
-      "last_modified": "2023-08-30T00:25:28Z",
-      "resolved": "github:NixOS/nixpkgs/a63a64b593dcf2fe05f7c5d666eb395950f36bc9#act",
+    "act@0.2.92": {
+      "last_modified": "2026-10-28T22:04:29Z",
+      "resolved": "github:NixOS/nixpkgs/e62746b0b472753ef019baceab6f1e2e52014980#act",
       "source": "devbox-search",
-      "version": "0.2.49"
+      "version": "0.2.92",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/0nx0hqq2883mhksxw2jp84mg481mk6dp-act-0.2.92",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/0nx0hqq2883mhksxw2jp84mg481mk6dp-act-0.2.92"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/lpnmwwhizlxlnjchs8dzwdvxxsybsnfh-act-0.2.92",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/lpnmwwhizlxlnjchs8dzwdvxxsybsnfh-act-0.2.92"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/gyvwp6d5kdsfj4hkjcgf012a0d3zn229-act-0.2.92",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/gyvwp6d5kdsfj4hkjcgf012a0d3zn229-act-0.2.92"
+        }
+      }
     },
     "docker@latest": {
       "last_modified": "2023-08-30T00:25:28Z",
@@ -21,6 +53,7 @@
     },
     "nodejs@18.17.1": {
       "last_modified": "2023-08-30T00:25:28Z",
+      "plugin_version": "0.0.5",
       "resolved": "github:NixOS/nixpkgs/a63a64b593dcf2fe05f7c5d666eb395950f36bc9#nodejs_18",
       "source": "devbox-search",
       "version": "18.17.1"
